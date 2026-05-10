@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/* copy input to output */
-/* verify expression */
-
+/* count characters in input; 1st version */
 int main()
 {
-    int c;
+    long nc;
 
-    while (c = (getchar() != EOF))
-        printf("%d\n", c);
+    nc = 0;
+    while (getchar() != EOF)
+        ++nc;
+    printf("%ld\n", nc);
 }
